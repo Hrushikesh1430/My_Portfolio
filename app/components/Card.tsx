@@ -19,10 +19,10 @@ export const Card = ({ CardData }: CardProps) => {
       }}
     >
       <Image src="/projectTile.jpeg" alt="projectTile" width={375} height={260} className="mb-7 object-cover rounded-tl-2xl rounded-tr-2xl" />
-      <div className="  px-7">
-        <span className="text-center block leading-7 text-2xl mb-4 text-headingWhite">{CardData.title}</span>
-        <span className="block text-base  mb-3 text-headingWhite font-Poppins font-extralight">{CardData.description}</span>
-        <span className="block text-base mb-3 text-headingWhite  font-Poppins font-extralight">
+      <div className="text-headingWhite  px-7">
+        <span className="text-center block leading-7 text-2xl mb-4 ">{CardData.title}</span>
+        <span className="block text-base mb-3 font-Poppins font-light">{CardData.description}</span>
+        <span className="block text-base mb-3 font-Poppins font-light">
           <span className=" font-semibold">Tech Stack: </span>
           {CardData.techStack}
         </span>

@@ -1,0 +1,24 @@
+[
+  {
+    "period": "Nov 2022 - Present",
+    "company": "Depronto Infotech",
+    "experience": [
+      "Played a crucial role in architecture design and played a pivotal role in developing the final landing page for ICICI Prudential web applications.",
+      "Executed strategic coding methodologies and optimization techniques, yielding a notable 20% improvement in application load times.",
+      "Effectively communicated technical concepts in a non-technical manner, fostering a shared understanding and aligning deliverables with client expectations."
+    ],
+    "techStack": "HTML5, CSS3, JavaScript, ReactJS, MUI, MobX, Git",
+    "position": "Frontend Developer"
+  },
+  {
+    "period": "Feb 2021 - Aug 2021",
+    "company": "Quadbtech",
+    "experience": [
+      "Developed projects with the help of Frontend technologies - HTML 5, CSS3, JavaScript, Bootstrap ,and jQuery.",
+      "Worked on backend technologies - PHP and MYSQL to develop CRM and educational website-govtjobkaro.com",
+      "Implemented multiple AJAX calls to perform CRUD operations on the MYSQL database for the blogging portal and created the database schema for the project."
+    ],
+    "techStack": "HTML5, CSS3, JavaScript, ReactJS, Bootstrap, Git, PHP, MYSQL",
+    "position": "Full Stack Developer"
+  }
+]

@@ -19,11 +19,33 @@ const config: Config = {
         customBlue: "#13B0F5",
         headingWhite: "#CCC",
         cardBackground: "#363636",
+        dividerBlack: "#191919",
+        customPink: "#E70FAA",
         // customGreen: {
         //   light: '#55efc4',
         //   DEFAULT: '#00b894',
         //   dark: '#00a896',
         // },
+      },
+      animation: {
+        text: "text 5s ease infinite",
+        "loop-scroll": "loop-scroll 25s linear infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },

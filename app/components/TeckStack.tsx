@@ -3,9 +3,9 @@ import Image from "next/image";
 export const TechStack = () => {
   const tech: Array<string> = ["html", "css", "js", "react", "next", "tailwind", "bootstrap", "git"];
   return (
-    <section className="mx-auto max-w-screen-lg mb-60">
-      <h3 className=" text-5xl font-bold text-headingWhite text-center font-Poppins leading-7 mb-12">Tech Stack</h3>
-      <span className=" text-3xl text-center text-lightContent font-Poppins leading-7 block mb-24 ">
+    <section className="mx-auto px-8 mb-40 lg:p-0 lg:max-w-screen-lg lg:mb-60">
+      <h3 className="text-4xl lg:text-5xl font-bold text-headingWhite text-center font-Poppins leading-7 mb-12">Tech Stack</h3>
+      <span className="text-2xl lg:text-3xl text-center text-lightContent font-Poppins leading-7 block mb-24 ">
         Technologies I’ve been working with recently
       </span>
 

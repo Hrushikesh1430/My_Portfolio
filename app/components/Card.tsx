@@ -13,7 +13,7 @@ interface CardData {
 export const Card = ({ CardData }: CardProps) => {
   return (
     <div
-      className="max-w-[373px] max-h-[586px] min-h-[586px] min font-Poppins bg-cardBackground rounded-2xl pb-7 shadow-slate-500 overflow-hidden transition-all duration-100 hover:scale-110 cursor-pointer"
+      className="max-w-[373px] max-h-[586px] min-h-[586px] min font-Poppins bg-cardBackground rounded-2xl pb-7 shadow-slate-500 overflow-hidden lg:transition-all lg:duration-100 lg:hover:scale-110 cursor-pointer"
       style={{
         boxShadow: "2px 2px 100px 0px rgba(0, 0, 0, 0.20)",
       }}

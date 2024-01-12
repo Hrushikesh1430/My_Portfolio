@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import navJSON from "../JSON/navBar.json";
+import navJSON from "../JSON/Navbar.json";
+
 import { useContext, useState } from "react";
 import { DataContext } from "../context/Datacontext";
 

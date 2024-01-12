@@ -1,5 +1,5 @@
 import Image from "next/image";
-import navJSON from "../JSON/navBar.json";
+import navJSON from "../JSON/Navbar.json";
 
 interface navItem {
   name: string;

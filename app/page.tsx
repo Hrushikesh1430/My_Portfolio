@@ -14,7 +14,7 @@ export default function Home() {
       <TechStack />
       <Projects />
       <Work />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

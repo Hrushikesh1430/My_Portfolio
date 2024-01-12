@@ -39,7 +39,7 @@ export const Card = ({ CardData }: CardProps) => {
             </a>
           </div>
           <div className="flex items-center ">
-            <Image src="/link.svg" alt="link_icon" width={20} height={20} className="mr-2 inline-block" />
+            <Image src="/logos/github.svg" alt="link_icon" width={20} height={20} className="mr-2 inline-block" />
             <a
               href="https://example.com"
               target="_blank"

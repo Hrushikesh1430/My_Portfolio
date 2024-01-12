@@ -9,18 +9,18 @@ export const TechStack = () => {
         Technologies I’ve been working with recently
       </span>
 
-      <div className="flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <ul className="flex items-center [&_li]:mx-8 min-w-full animate-loop-scroll [&_img]:max-w-none w-96 mr-[300px]">
+      <div className="flex overflow-hidden  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <ul className="flex items-center [&_li]:mx-5 lg:[&_li]:mx-8 [&_img]:max-w-none animate-loop-scroll">
           {tech.map((item, key) => (
             <li key={key} className={`${item === "next" && "bg-white"}`}>
-              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} />
+              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} className="w-24 lg:w-28" />
             </li>
           ))}
         </ul>
-        <ul className="flex  items-center [&_li]:mx-8 min-w-full animate-loop-scroll [&_img]:max-w-none w-96" aria-hidden="true">
+        <ul className="flex items-center [&_li]:mx-5 lg:[&_li]:mx-8 [&_img]:max-w-none animate-loop-scroll" aria-hidden="true">
           {tech.map((item, key) => (
-            <li key={key}>
-              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} key={`id_${key}`} />
+            <li key={key} className={`${item === "next" && "bg-white"}`}>
+              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} key={`id_${key}`} className="w-24 lg:w-28" />
             </li>
           ))}
         </ul>

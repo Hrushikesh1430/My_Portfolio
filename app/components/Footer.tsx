@@ -34,8 +34,12 @@ export const Footer = () => {
           ))}
         </ul>
         <span className="font-DMSans text-lg font-normal leading-7 text-lightContent">
-          Built by Hrushikesh Tawde with <br />
-          <span className="bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">Love & Chai</span>
+          <span className="md:hidden">
+            Built by Hrushikesh Tawde with <br />
+          </span>
+          <span className="hidden md:inline-block">Built by Hrushikesh Tawde with </span>
+
+          <span className="bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent"> Love & Chai</span>
         </span>
       </div>
     </section>

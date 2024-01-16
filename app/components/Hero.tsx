@@ -3,7 +3,10 @@ import { AnimationDiv } from "./Animation";
 
 export const Hero = () => {
   return (
-    <section className="pt-28 px-8 mx-auto mb-48 flex flex-col-reverse lg:p-0 lg:items-center lg:flex-row lg:max-w-screen-lg lg:gap-16  border-8 ">
+    <section
+      className=" pt-36 px-8 mx-auto mb-48 flex flex-col-reverse lg:p-0 lg:items-center lg:flex-row lg:max-w-screen-lg lg:gap-16  border-8 "
+      id="Home"
+    >
       <div>
         <span className="font-Poppins text-customWhite text-4xl md:text-5xl lg:text-6xl font-bold">
           <span className="hidden lg:block">

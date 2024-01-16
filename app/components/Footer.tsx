@@ -8,7 +8,7 @@ interface navItem {
 
 export const Footer = () => {
   return (
-    <section className="mx-auto px-8 mb-20 lg:p-0 lg:mb-36 lg:max-w-screen-lg">
+    <section className="mx-auto px-8 mb-20 lg:p-0 lg:mb-36 lg:max-w-screen-lg" id="Contact">
       <div className="flex flex-col gap-4 w-full items-center mb-11 md:flex-row md:justify-between md:gap-0">
         <Image src="/logos/logo.svg" alt="logo" width={97} height={59} />
         <div className="flex flex-col gap-3  lg:flex-row lg:items-end">

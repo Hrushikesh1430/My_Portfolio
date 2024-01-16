@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import navJSON from "../JSON/Navbar.json";
 
 import { useContext, useState } from "react";
 import { DataContext } from "../context/Datacontext";
+import Link from "next/link";
 
 interface navItem {
   name: string;
@@ -17,6 +17,17 @@ const Navbar = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleScroll = (elementID: string) => {
+    const elem = document.getElementById(elementID) as HTMLElement | null;
+    if (elem) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80,
+      });
+    }
+  };
+
   return (
     <nav className="lg:flex items-center py-6 w-full ">
       <div className="hidden lg:block mr-72 cursor-pointer">
@@ -36,9 +47,9 @@ const Navbar = () => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className={`w-3.5 h-3.5 transition-transform transform ${isOpen ? "rotate-180" : ""}`}
         >
           <path d="M6 9l6 6l6 -6"></path>
@@ -46,12 +57,13 @@ const Navbar = () => {
       </button>
 
       {isOpen && (
-        <div className="lg:hidden z-10 origin-top-right absolute right-0 mt-2 py-3 rounded-xl pointer-events-auto text-gray-300 bg-gray-800 shadow-xl shadow-black/20 ring-1 ring-inset ring-gray-700/30 ">
+        <div className="lg:hidden z-10 origin-top-right absolute right-0 mt-2 py-3 rounded-xl pointer-events-auto text-gray-300 bg-dark shadow-xl shadow-black/20 ring-1 ring-inset ring-gray-700/30 ">
           <ul className="lg:flex lg:mr-auto font-DMSans">
             {navJSON.map((item: navItem, index) => (
               <li
                 key={index}
-                className="block px-4 pr-16 py-2 text-base text-customWhite hover:bg-gray-100 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+                className="block px-4 pr-16 py-2 text-base text-customWhite  lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+                onClick={() => handleScroll(item.name)}
               >
                 {item.name}
               </li>
@@ -64,7 +76,8 @@ const Navbar = () => {
         {navJSON.map((item: navItem, index) => (
           <li
             key={index}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+            className="block px-4 py-2 text-sm text-gray-700 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+            onClick={() => handleScroll(item.name)}
           >
             {item.name}
           </li>

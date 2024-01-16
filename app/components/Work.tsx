@@ -17,7 +17,7 @@ const VerticalLine = () => {
 };
 export const Work = () => {
   return (
-    <section className="mx-auto px-8 mb-28 lg:p-0 lg:mb-52 lg:max-w-screen-lg">
+    <section className="mx-auto px-8 mb-28 lg:p-0 lg:mb-52 lg:max-w-screen-lg" id="Work">
       <h3 className=" text-4xl lg:text-5xl font-bold text-headingWhite text-center font-Poppins leading-7 mb-24">Work History</h3>
       <div className="flex flex-col text-headingWhite">
         <div className="flex flex-col">

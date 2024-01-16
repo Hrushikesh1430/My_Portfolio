@@ -1,12 +1,12 @@
 import Image from "next/image";
-import navJSON from "../JSON/Navbar.json";
+import navJSON from "../../JSON/Navbar.json";
 
 interface navItem {
   name: string;
   link: string;
 }
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <section className="mx-auto px-8 mb-20 lg:p-0 lg:mb-36 lg:max-w-screen-lg" id="Contact">
       <div className="flex flex-col gap-4 w-full items-center mb-11 md:flex-row md:justify-between md:gap-0">
@@ -45,3 +45,5 @@ export const Footer = () => {
     </section>
   );
 };
+
+export default Footer;

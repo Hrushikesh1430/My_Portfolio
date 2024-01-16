@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const TechStack = () => {
+const TechStack = () => {
   const tech: Array<string> = ["html", "css", "js", "react", "next", "tailwind", "bootstrap", "git"];
   return (
     <section className="mx-auto px-8 mb-40 lg:p-0 lg:max-w-screen-lg lg:mb-60" id="Techstack">
@@ -28,3 +28,5 @@ export const TechStack = () => {
     </section>
   );
 };
+
+export default TechStack;

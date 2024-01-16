@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { AnimationDiv } from "./Animation";
+import { AnimationDiv } from "../Animation";
+import React from "react";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section
       className=" pt-36 px-8 mx-auto mb-48 flex flex-col-reverse lg:p-0 lg:items-center lg:flex-row lg:max-w-screen-lg lg:gap-16  border-8 "
@@ -39,3 +40,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;

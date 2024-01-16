@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import navJSON from "../JSON/Navbar.json";
+import navJSON from "../../JSON/Navbar.json";
 
 import { useContext, useState } from "react";
-import { DataContext } from "../context/Datacontext";
+import { DataContext } from "../../context/Datacontext";
 import Link from "next/link";
 
 interface navItem {
@@ -93,10 +93,12 @@ const Navbar = () => {
   );
 };
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className=" z-10 fixed right-8 lg:static mt-8 lg:flex lg:mt-0 md:max-w-screen-lg md:mx-auto md:mb-24 ">
       <Navbar />
     </header>
   );
 };
+
+export default Header;

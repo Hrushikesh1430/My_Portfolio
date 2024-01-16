@@ -10,7 +10,7 @@ interface CardData {
   live_url: string;
   github_url: string;
 }
-export const Card = ({ CardData }: CardProps) => {
+const Card = ({ CardData }: CardProps) => {
   return (
     <div
       className="max-w-[373px] max-h-[586px] min-h-[586px] min font-Poppins bg-cardBackground rounded-2xl pb-7 shadow-slate-500 overflow-hidden lg:transition-all lg:duration-100 lg:hover:scale-110 cursor-pointer"
@@ -54,3 +54,4 @@ export const Card = ({ CardData }: CardProps) => {
     </div>
   );
 };
+export default Card;

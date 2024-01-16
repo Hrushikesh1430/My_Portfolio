@@ -1,5 +1,5 @@
-import { Card } from "./Card";
-import CardData from "../JSON/Projects.json";
+import CardData from "../../JSON/Projects.json";
+import Card from "./Card/Card";
 
 interface CardData {
   title: string;
@@ -9,7 +9,7 @@ interface CardData {
   techStack: string;
 }
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <section className="mx-auto px-8 mb-40 lg:p-0 lg:mb-60 lg:max-w-screen-lg" id="Projects">
       <h3 className="text-4xl lg:text-5xl font-bold text-headingWhite text-center font-Poppins leading-7 mb-12">Projects</h3>
@@ -22,3 +22,5 @@ export const Projects = () => {
     </section>
   );
 };
+
+export default Projects;

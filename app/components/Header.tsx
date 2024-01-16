@@ -62,7 +62,7 @@ const Navbar = () => {
             {navJSON.map((item: navItem, index) => (
               <li
                 key={index}
-                className="block px-4 pr-16 py-2 text-base text-customWhite  lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+                className="block px-4 pr-16 py-2 text-base text-customWhite  lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 select-none"
                 onClick={() => handleScroll(item.name)}
               >
                 {item.name}
@@ -76,7 +76,7 @@ const Navbar = () => {
         {navJSON.map((item: navItem, index) => (
           <li
             key={index}
-            className="block px-4 py-2 text-sm text-gray-700 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 "
+            className="block px-4 py-2 text-sm text-gray-700 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 select-none"
             onClick={() => handleScroll(item.name)}
           >
             {item.name}

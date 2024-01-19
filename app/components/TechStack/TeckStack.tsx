@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BlurredImage } from "../BlurredImage";
 
 const TechStack = () => {
   const tech: Array<string> = ["html", "css", "js", "react", "next", "tailwind", "bootstrap", "git"];
@@ -12,15 +13,15 @@ const TechStack = () => {
       <div className="flex overflow-hidden  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         <ul className="flex items-center [&_li]:mx-5 lg:[&_li]:mx-8 [&_img]:max-w-none animate-loop-scroll">
           {tech.map((item, key) => (
-            <li key={key} className={`${item === "next" && "bg-white"}`}>
-              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} className="w-24 lg:w-28" />
+            <li key={key} className={`relative w-24 h-24 lg:w-28 lg:h-24 ${item === "next" ? "bg-white" : ""}`}>
+              <BlurredImage src={`logos/${item}.svg`} alt={`${item}_logo`} />
             </li>
           ))}
         </ul>
         <ul className="flex items-center [&_li]:mx-5 lg:[&_li]:mx-8 [&_img]:max-w-none animate-loop-scroll" aria-hidden="true">
           {tech.map((item, key) => (
-            <li key={key} className={`${item === "next" && "bg-white"}`}>
-              <Image src={`logos/${item}.svg`} width={105} height={105} alt={`${item}_logo`} key={`id_${key}`} className="w-24 lg:w-28" />
+            <li key={key} className={`relative w-24 h-24 lg:w-28 lg:h-24 ${item === "next" ? "bg-white" : ""}`}>
+              <BlurredImage src={`logos/${item}.svg`} alt={`${item}_logo`} />
             </li>
           ))}
         </ul>

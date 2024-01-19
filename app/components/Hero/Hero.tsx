@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { AnimationDiv } from "../Animation";
 import React from "react";
+import { getBlurredImageSrc } from "../../utils/utils";
+import hero from "../../../public/profile_1.jpeg";
+import { BlurredImage } from "../BlurredImage";
 
 const Hero = () => {
   return (
@@ -35,7 +38,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full mb-9 max-w-32 md:max-w-44 lg:max-w-none lg:w-auto lg:flex lg:justify-center">
-        <Image src="/profile_1.jpeg" alt="profile_1" width={300} height={300} className="rounded-full" />
+        <div className="relative w-[300px] h-[300px]">
+          <BlurredImage src="/profile_1.jpeg" className="rounded-full object-cover" alt="profile_1" />
+        </div>
       </div>
     </section>
   );

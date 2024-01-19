@@ -23,7 +23,7 @@ const Navbar = () => {
     if (elem) {
       window.scrollTo({
         behavior: "smooth",
-        top: elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80,
+        top: elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80, //offset 80
       });
     }
   };

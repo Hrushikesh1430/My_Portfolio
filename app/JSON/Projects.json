@@ -4,14 +4,14 @@
     "description": "Meri Dukan is an e-commerce web app providing an experience that's more than just a shopping app – it's a virtual marketplace tailored for you. 'Meri Dukan' brings together curated collections, seamless navigation, and all the major features that you look for in a generic e-commerce app.",
     "live_url": "",
     "github_url": "",
-    "techStack": "HTML5, CSS3, ReactJS, Material UI, MockBee API"
+    "techStack": "ReactJS, Material UI, HTML5, CSS3,  MockBee API"
   },
   {
     "title": "Mera Twitter",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "description": "Introducing 'Mera Twitter,' a social media app with all the major features of Twitter. Reimagining functionalities such as creating posts, bookmarks, and followers was a great undertaking to implement and learn. Give it a try to experience seamless posting, bookmarking, and connecting.",
     "live_url": "",
     "github_url": "",
-    "techStack": "HTML5, CSS3, ReactJS, Material UI, MockBee API"
+    "techStack": "ReactJS, Material UI, HTML5, CSS3, MockBee API"
   },
   {
     "title": "Kriyata",

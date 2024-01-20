@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import navJSON from "../../JSON/Navbar.json";
+import { handleScroll } from "@/app/utils/utils";
 
 interface navItem {
   name: string;
@@ -28,7 +30,11 @@ const Footer = () => {
       <div className="flex flex-col gap-7 text-center md:flex-row justify-between">
         <ul className="flex flex-wrap font-DMSans justify-center">
           {navJSON.map((item: navItem, index) => (
-            <li key={index} className="mr-4 md:mr-8 font-medium leading-7 cursor-pointer text-lightContent text-lg lg:text-xl hover:text-slate-300">
+            <li
+              key={index}
+              className="mr-4 md:mr-8 font-medium leading-7 cursor-pointer text-lightContent text-lg lg:text-xl hover:text-slate-300 select-none"
+              onClick={() => handleScroll(item.name)}
+            >
               {item.name}
             </li>
           ))}

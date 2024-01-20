@@ -5,7 +5,7 @@ import navJSON from "../../JSON/Navbar.json";
 import { useContext, useState } from "react";
 import { DataContext } from "../../context/Datacontext";
 import Link from "next/link";
-
+import { handleScroll } from "@/app/utils/utils";
 interface navItem {
   name: string;
   link: string;
@@ -16,16 +16,6 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleScroll = (elementID: string) => {
-    const elem = document.getElementById(elementID) as HTMLElement | null;
-    if (elem) {
-      window.scrollTo({
-        behavior: "smooth",
-        top: elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80, //offset 80
-      });
-    }
   };
 
   return (

@@ -1,14 +1,10 @@
-import { getPlaiceholder } from "plaiceholder";
-import fs from "node:fs/promises";
-
-const getBlurredImageSrc = async (src) => {
-  try {
-    const file = await fs.readFile(`./public/${src}`);
-    const { base64, color } = await getPlaiceholder(file);
-    return base64;
-  } catch (err) {
-    console.log(err);
+const handleScroll = (elementID) => {
+  const elem = document.getElementById(elementID);
+  if (elem) {
+    window.scrollTo({
+      behavior: "smooth",
+      top: elem.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80, //offset 80
+    });
   }
 };
-
-export { getBlurredImageSrc };
+export { handleScroll };

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { AnimationDiv } from "../Animation";
 import React from "react";
-import { getBlurredImageSrc } from "../../utils/utils";
-import hero from "../../../public/profile_1.jpeg";
 import { BlurredImage } from "../BlurredImage";
 
 const Hero = () => {

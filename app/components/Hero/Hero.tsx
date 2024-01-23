@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AnimationDiv } from "../Animation";
 import React from "react";
 import { BlurredImage } from "../BlurredImage";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -29,10 +30,17 @@ const Hero = () => {
           </span>
         </span>
         {/* <AnimationDiv /> */}
+
         <div className="lg:hidden flex gap-3">
-          <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
-          <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
-          <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+          <Link href="https://github.com/Hrushikesh1430" target="_blank" rel="noopener noreferrer">
+            <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
+          </Link>
+          <Link href="https://twitter.com/TawdeHrushikesh" target="_blank" rel="noopener noreferrer">
+            <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/hrushitawde" target="_blank" rel="noopener noreferrer">
+            <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+          </Link>
         </div>
       </div>
       <div className="w-full mb-9 max-w-32 md:max-w-44 lg:max-w-none lg:w-auto lg:flex lg:justify-center">

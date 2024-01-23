@@ -7,6 +7,7 @@ interface CardData {
   live_url: string;
   github_url: string;
   techStack: string;
+  image: string;
 }
 
 const Projects = () => {

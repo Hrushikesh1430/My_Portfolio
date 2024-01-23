@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BlurredImage } from "../../BlurredImage";
 
 interface CardProps {
   CardData: CardData;
@@ -9,6 +10,7 @@ interface CardData {
   techStack: string;
   live_url: string;
   github_url: string;
+  image: string;
 }
 const Card = ({ CardData }: CardProps) => {
   return (
@@ -18,14 +20,9 @@ const Card = ({ CardData }: CardProps) => {
         boxShadow: "2px 2px 100px 0px rgba(0, 0, 0, 0.20)",
       }}
     >
-      <Image
-        src="/projectTile.jpeg"
-        alt="projectTile"
-        width="0"
-        height="0"
-        sizes="100vw"
-        className="object-cover rounded-tl-2xl rounded-tr-2xl w-full h-auto mb-7"
-      />
+      <div className="relative h-[300px] mb-7">
+        <BlurredImage src={`/${CardData.image}`} alt="projectTile" className="object-cover" />
+      </div>
 
       <div className="text-headingWhite  px-7">
         <span className="text-center block leading-7 text-2xl mb-4 ">{CardData.title}</span>
@@ -38,7 +35,7 @@ const Card = ({ CardData }: CardProps) => {
           <div className="flex items-center mr-auto">
             <Image src="/link.svg" alt="link_icon" width={20} height={20} className="mr-2 inline-block" />
             <a
-              href="https://example.com"
+              href={CardData.live_url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-base leading-7 text-headingWhite  font-Poppins font-extralight mr-auto hover:underline"
@@ -46,17 +43,19 @@ const Card = ({ CardData }: CardProps) => {
               Live preview
             </a>
           </div>
-          <div className="flex items-center ">
-            <Image src="/logos/github.svg" alt="link_icon" width={20} height={20} className="mr-2 inline-block" />
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-base leading-7 text-headingWhite  font-Poppins font-extralight mr-auto hover:underline"
-            >
-              View Code
-            </a>
-          </div>
+          {CardData.github_url !== "" && (
+            <div className="flex items-center ">
+              <Image src="/logos/github.svg" alt="link_icon" width={20} height={20} className="mr-2 inline-block" />
+              <a
+                href={CardData.github_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-base leading-7 text-headingWhite  font-Poppins font-extralight mr-auto hover:underline"
+              >
+                View Code
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

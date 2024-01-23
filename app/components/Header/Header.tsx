@@ -20,9 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="lg:flex items-center py-6 w-full ">
-      <div className="hidden lg:block mr-72 cursor-pointer">
-        <Image src="/logos/logo.svg" alt="logo" width={97} height={59} />
-      </div>
+      <Image src="/logos/logo.svg" alt="logo" width={97} height={59} className="hidden lg:block mr-52 cursor-pointer" />
 
       <button
         className=" lg:hidden pointer-events-auto inline-flex gap-2 h-10 px-4 font-medium text-sm justify-center items-center rounded-full text-gray-300 bg-gray-800/90 shadow-xl shadow-black/20 ring-1 ring-inset ring-gray-700/30 hover:bg-gray-700/70 backdrop-blur transition"
@@ -62,11 +60,11 @@ const Navbar = () => {
         </div>
       )}
 
-      <ul className="hidden lg:flex lg:mr-auto font-DMSans">
+      <ul className="hidden lg:flex lg:mr-auto font-DMSans gap-4">
         {navJSON.map((item: navItem, index) => (
           <li
             key={index}
-            className="block px-4 py-2 text-sm text-gray-700 lg:mr-8 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 select-none"
+            className="block px-4 py-2 text-sm text-gray-700 lg:font-medium lg:leading-7 lg:cursor-pointer lg:text-xl lg:text-lightContent lg:hover:text-slate-300 select-none"
             onClick={() => handleScroll(item.name)}
           >
             {item.name}
@@ -75,9 +73,15 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden lg:flex gap-3">
-        <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
-        <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
-        <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+        <Link href="https://github.com/Hrushikesh1430" target="_blank" rel="noopener noreferrer">
+          <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
+        </Link>
+        <Link href="https://twitter.com/TawdeHrushikesh" target="_blank" rel="noopener noreferrer">
+          <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
+        </Link>
+        <Link href="https://www.linkedin.com/in/hrushitawde" target="_blank" rel="noopener noreferrer">
+          <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+        </Link>
       </div>
     </nav>
   );

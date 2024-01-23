@@ -2,6 +2,7 @@
 import Image from "next/image";
 import navJSON from "../../JSON/Navbar.json";
 import { handleScroll } from "@/app/utils/utils";
+import Link from "next/link";
 
 interface navItem {
   name: string;
@@ -20,9 +21,15 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-3 justify-center md:ml-24">
-            <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
-            <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
-            <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+            <Link href="https://github.com/Hrushikesh1430" target="_blank" rel="noopener noreferrer">
+              <Image src="/logos/github.svg" alt="github_logo" width={30} height={30} className="cursor-pointer" />
+            </Link>
+            <Link href="https://twitter.com/TawdeHrushikesh" target="_blank" rel="noopener noreferrer">
+              <Image src="/logos/twitter.svg" alt="twitter_logo" width={30} height={30} className="cursor-pointer" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/hrushitawde" target="_blank" rel="noopener noreferrer">
+              <Image src="/logos/linkedin.svg" alt="linkedin_logo" width={30} height={30} className="cursor-pointer" />
+            </Link>
           </div>
         </div>
       </div>

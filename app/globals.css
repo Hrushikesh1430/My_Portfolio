@@ -8,6 +8,28 @@
   .paused {
     animation-play-state: paused;
   }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background-color: #646464;
+  }
+  .scrollbar::-webkit-scrollbar-track-piece {
+    background-color: #191919;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+  }
+
+  /* .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  } */
 }
 
 html,

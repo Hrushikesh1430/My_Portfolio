@@ -2,36 +2,33 @@
   {
     "title": "Meri Dukan",
     "description": "Meri Dukan is an e-commerce web app providing an experience that's more than just a shopping app – it's a virtual marketplace tailored for you. 'Meri Dukan' brings together curated collections, seamless navigation, and all the major features that you look for in a generic e-commerce app.",
-    "live_url": "",
-    "github_url": "",
-    "techStack": "ReactJS, Material UI, HTML5, CSS3,  MockBee API"
+    "live_url": "https://meri-dukan.netlify.app/",
+    "github_url": "https://github.com/Hrushikesh1430/Ecommerce-app",
+    "image": "meri-dukan.png",
+    "techStack": "ReactJS, Material UI, HTML5, CSS3,Javascript,  MockBee API"
   },
   {
     "title": "Mera Twitter",
     "description": "Introducing 'Mera Twitter,' a social media app with all the major features of Twitter. Reimagining functionalities such as creating posts, bookmarks, and followers was a great undertaking to implement and learn. Give it a try to experience seamless posting, bookmarking, and connecting.",
-    "live_url": "",
+    "live_url": "https://mera-twitter.netlify.app/",
+    "github_url": "https://github.com/Hrushikesh1430/SocialMedia-app",
+    "image": "mera-twitter.png",
+    "techStack": "ReactJS, Material UI, HTML5, CSS3, Javascript, MockBee API"
+  },
+  {
+    "title": "PAPL - Engineering",
+    "description": " 'Pradeep Automotives' a web marvel where my frontend expertise seamlessly blends design and functionality. Crafted for an immersive user journey, the site exudes automotive sophistication. From sleek galleries showcasing the latest models to an intuitively structured menu, everything was personalized with client requirements.",
+    "live_url": "http://pradeepautomotive.com/",
     "github_url": "",
-    "techStack": "ReactJS, Material UI, HTML5, CSS3, MockBee API"
+    "image": "papl.png",
+    "techStack": "ReactJS, Bootstrap , HTML5, CSS3, Javascript, MockBee API"
   },
   {
     "title": "Kriyata",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    "live_url": "",
-    "github_url": "",
-    "techStack": "HTML5, CSS3, ReactJS, Material UI, MockBee API"
-  },
-  {
-    "title": "PAPL",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    "live_url": "",
-    "github_url": "",
-    "techStack": "HTML5, CSS3, ReactJS, Material UI, MockBee API"
-  },
-  {
-    "title": "PAPL",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    "live_url": "",
-    "github_url": "",
-    "techStack": "HTML5, CSS3, ReactJS, Material UI, MockBee API"
+    "description": "Kriyata was my major project in the final year of computer engineering. With Kriyata seamlessly navigate through the admin dashboard, effortlessly create tournaments, and let automatic fixtures streamline the competition. Kriyata is my solution to automate tournament management and seamlessly manage all tournaments.",
+    "live_url": "https://kriyata.infinityfreeapp.com/",
+    "github_url": "https://github.com/Hrushikesh1430/Kriyata-Tournament-Management",
+    "image": "kriyata.png",
+    "techStack": "HTML5, CSS3, Javascript, jQuery, Bootstrap PHP, MySQL,"
   }
 ]

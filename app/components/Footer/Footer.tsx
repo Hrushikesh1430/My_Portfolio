@@ -14,7 +14,7 @@ const Footer = () => {
     <section className="mx-auto px-8 mb-20 lg:p-0 lg:mb-36 lg:max-w-screen-lg" id="Contact">
       <div className="flex flex-col gap-4 w-full items-center mb-11 md:flex-row md:justify-between md:gap-0">
         <span
-          className="lg:block cursor-pointer font-Poppins text-4xl md:text-4xl  font-bold animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent"
+          className="lg:block pt-2 cursor-pointer font-Poppins text-4xl md:text-4xl  font-bold animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent"
           onClick={() => window.location.reload()}
           dangerouslySetInnerHTML={{ __html: `{ HT }` }}
         ></span>

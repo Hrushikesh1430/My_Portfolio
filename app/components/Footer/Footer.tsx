@@ -13,7 +13,11 @@ const Footer = () => {
   return (
     <section className="mx-auto px-8 mb-20 lg:p-0 lg:mb-36 lg:max-w-screen-lg" id="Contact">
       <div className="flex flex-col gap-4 w-full items-center mb-11 md:flex-row md:justify-between md:gap-0">
-        <Image src="/logos/logo.svg" alt="logo" width={97} height={59} />
+        <span
+          className="lg:block cursor-pointer font-Poppins text-4xl md:text-4xl  font-bold animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent"
+          onClick={() => window.location.reload()}
+          dangerouslySetInnerHTML={{ __html: `{ HT }` }}
+        ></span>
         <div className="flex flex-col gap-3  lg:flex-row lg:items-end">
           <div className="flex flex-col gap-1 items-center lg:flex-row md:items-end">
             <span className="font-DMSans text-lg font-normal leading-7 text-lightContent lg:pr-8">+91 8104460774</span>

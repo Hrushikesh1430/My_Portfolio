@@ -33,7 +33,7 @@ const Work = () => {
                   <span className="block text-gray-400 mb-2">{item.position}</span>
                   <ul className="ml-4 list-disc font-extralight">
                     {item.experience.map((item: string, index) => (
-                      <li key={index} className=" text-lg text-lightContent font-Poppins font-extralight">
+                      <li key={index} className=" text-sm leading-6  md:text-base text-headingWhite md:leading-7 font-Poppins font-extralight">
                         {item}
                       </li>
                     ))}

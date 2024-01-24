@@ -19,9 +19,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="lg:flex items-center py-6 w-full ">
-      <Image src="/logos/logo.svg" alt="logo" width={97} height={59} className="hidden lg:block mr-52 cursor-pointer" />
-
+    <nav className="lg:flex items-center py-6 w-full">
+      {/* <Image src="/logos/logo.svg" alt="logo" width={97} height={59} className="hidden lg:block mr-52 cursor-pointer" /> */}
+      <span
+        className="hidden pt-2 lg:block mr-52 cursor-pointer font-Poppins text-4xl md:text-4xl  font-bold animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent"
+        onClick={() => window.location.reload()}
+        dangerouslySetInnerHTML={{ __html: `{ HT }` }}
+      ></span>
       <button
         className=" lg:hidden pointer-events-auto inline-flex gap-2 h-10 px-4 font-medium text-sm justify-center items-center rounded-full text-gray-300 bg-gray-800/90 shadow-xl shadow-black/20 ring-1 ring-inset ring-gray-700/30 hover:bg-gray-700/70 backdrop-blur transition"
         aria-label="Open Menu"

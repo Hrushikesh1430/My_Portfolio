@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section
-      className=" pt-36 px-8 mx-auto mb-48 flex flex-col-reverse lg:p-0 lg:items-center lg:flex-row lg:max-w-screen-lg lg:gap-16  border-8 "
+      className=" pt-36 px-8 mx-auto mb-48 flex flex-col-reverse md:px-8 lg:p-0 md:items-center md:justify-between md:flex-row md:max-w-screen-lg md:gap-16  border-8 "
       id="Home"
     >
       <div>
@@ -43,8 +43,8 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full mb-9 max-w-32 md:max-w-44 lg:max-w-none lg:w-auto lg:flex lg:justify-center">
-        <div className="relative w-[300px] h-[300px]">
+      <div className="w-full mb-9 max-w-32 md:max-w-[220px] lg:max-w-none lg:w-auto lg:flex lg:justify-center">
+        <div className="relative w-[150px] h-[150px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px]">
           <BlurredImage src="/profile_1.jpeg" className="rounded-full object-cover" alt="profile_1" />
         </div>
       </div>

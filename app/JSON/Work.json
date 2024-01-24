@@ -4,7 +4,8 @@
     "company": "Depronto Infotech",
     "experience": [
       "Played a crucial role in development in developing web apps for for ICICI Prudential like Unified guaranteed Plans(UGP), GIFT PRO, SukhSamruddhi and final landing page for ICICI Prudential Apps ",
-      "Executed strategic coding methodologies and optimization techniques, yielding a notable 50% improvement in application load times."
+      "Executed strategic coding methodologies and optimization techniques, yielding a notable 50% improvement in application load times.",
+      "Implemented advanced debugging tools and methodologies to troubleshoot and resolve frontend issues in the production environment for ICICI web apps, resulting in a 40% reduction in customer support issues and providing a seamless user experience."
     ],
     "techStack": "HTML5, CSS3, JavaScript, ReactJS, MUI, MobX, Git",
     "position": "Frontend Developer"
@@ -14,7 +15,8 @@
     "company": "Quadbtech",
     "experience": [
       "Developed projects with the help of Frontend technologies - HTML 5, CSS3, JavaScript, Bootstrap ,and jQuery.",
-      "Worked on backend technologies - PHP and MYSQL to develop CRM and educational website-govtjobkaro.com"
+      "Worked on backend technologies - PHP and MYSQL to develop CRM and educational website-govtjobkaro.com",
+      "Implemented multiple AJAX calls to perform CRUD operations on the MYSQL database for the  blogging portal and created the database schema for the project."
     ],
     "techStack": "HTML5, CSS3, JavaScript, ReactJS, Bootstrap, Git, PHP, MYSQL",
     "position": "Full Stack Developer"

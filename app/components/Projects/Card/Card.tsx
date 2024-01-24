@@ -20,16 +20,16 @@ const Card = ({ CardData }: CardProps) => {
         boxShadow: "2px 2px 100px 0px rgba(0, 0, 0, 0.20)",
       }}
     >
-      <div className="relative h-[300px] mb-7">
+      <div className="relative h-[176px] md:h-[300px] mb-7">
         <BlurredImage src={`/${CardData.image}`} alt="projectTile" className="object-cover" />
       </div>
 
       <div className="text-headingWhite  px-7">
         <span className="text-center block leading-7 text-2xl mb-4 ">{CardData.title}</span>
-        <span className="block text-base mb-3 font-Poppins font-light">{CardData.description}</span>
+        <span className="block text-sm leading-6  md:text-base mb-3 font-Poppins font-light">{CardData.description}</span>
         <span className="block text-base mb-3 font-Poppins font-light">
-          <span className=" font-semibold">Tech Stack: </span>
-          {CardData.techStack}
+          <span className="text-sm leading-6  md:text-base font-semibold">Tech Stack: </span>
+          <span className="text-sm leading-6 md:text-base"> {CardData.techStack}</span>
         </span>
         <div className="flex">
           <div className="flex items-center mr-auto">
@@ -38,7 +38,7 @@ const Card = ({ CardData }: CardProps) => {
               href={CardData.live_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-base leading-7 text-headingWhite  font-Poppins font-extralight mr-auto hover:underline"
+              className="inline-block text-sm leading-6  md:text-base lg:leading-7   text-headingWhite   font-Poppins font-extralight mr-auto hover:underline"
             >
               Live preview
             </a>
@@ -50,7 +50,7 @@ const Card = ({ CardData }: CardProps) => {
                 href={CardData.github_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-base leading-7 text-headingWhite  font-Poppins font-extralight mr-auto hover:underline"
+                className="inline-block text-sm leading-6  md:text-base text-headingWhite lg:leading-7  font-Poppins font-extralight mr-auto hover:underline"
               >
                 View Code
               </a>

@@ -15,18 +15,18 @@ const Hero = () => {
           <span className="hidden lg:block">
             Hi 👋, <br />
             My name is <br />
-            <span className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
+            <h1 className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
               Hrushikesh Tawde
-            </span>
-            <br /> I build things for web
+            </h1>
+            I build things for web
           </span>
 
           <span className="inline-block lg:hidden mb-7">
             Hey there, I&#39;m <br />
-            <span className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
+            <h1 className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
               Hrushikesh Tawde
-            </span>
-            <br /> I build things for web
+            </h1>
+            I build things for web
           </span>
         </span>
         {/* <AnimationDiv /> */}

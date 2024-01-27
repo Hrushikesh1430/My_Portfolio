@@ -11,24 +11,24 @@ const Hero = () => {
       id="Home"
     >
       <div>
-        <span className="font-Poppins text-customWhite text-4xl md:text-5xl lg:text-6xl font-bold">
+        <h1 className="font-Poppins text-customWhite text-4xl md:text-5xl lg:text-6xl font-bold">
           <span className="hidden lg:block">
             Hi 👋, <br />
             My name is <br />
-            <h1 className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
+            <p className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
               Hrushikesh Tawde
-            </h1>
+            </p>
             I build things for web
           </span>
 
           <span className="inline-block lg:hidden mb-7">
             Hey there, I&#39;m <br />
-            <h1 className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
+            <p className="animate-text bg-gradient-to-r from-customBlue via-purple-500 to-customPink bg-clip-text text-transparent">
               Hrushikesh Tawde
-            </h1>
+            </p>
             I build things for web
           </span>
-        </span>
+        </h1>
         {/* <AnimationDiv /> */}
 
         <div className="lg:hidden flex gap-3">

@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   creator: "Hrushikesh Tawde",
   publisher: "Hrushikesh Tawde",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-icon.ico",
+    icon: "favicon.ico",
+    shortcut: "favicon.ico",
+    apple: "apple-icon.png",
     other: {
-      rel: "/favicon.ico",
-      url: "/favicon.ico",
+      rel: "favicon.ico",
+      url: "favicon.ico",
     },
   },
   openGraph: {

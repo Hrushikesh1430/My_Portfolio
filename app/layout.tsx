@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     url: "https://hrushikeshtawde.vercel.app/",
+    images: "https://hrushikeshtawde.vercel.app/_next/image?url=%2Fprofile_1.jpeg&w=1200&q=75",
   },
 };
 

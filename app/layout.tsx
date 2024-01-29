@@ -24,7 +24,13 @@ export const metadata: Metadata = {
   creator: "Hrushikesh Tawde",
   publisher: "Hrushikesh Tawde",
   icons: {
-    icon: "/meta/favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.ico",
+    other: {
+      rel: "/favicon.ico",
+      url: "/favicon.ico",
+    },
   },
   openGraph: {
     title: "Hrushikesh Tawde",

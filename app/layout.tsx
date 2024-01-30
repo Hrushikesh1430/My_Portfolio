@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hrushikesh Tawde",
     description:
-      "Passionate web developer specializing in HTML5, CSS3,Javascript and  React. Check out my portfolio for innovative solutions and creative projects.",
+      "Namaskar, my name is hrushikesh tawde and I am a full stack web developer specializing in HTML5, CSS3,Javascript and React. Do check out my portfolio for innovative solutions and creative projects.",
     siteName: "Hrushikesh Tawde",
     locale: "en_US",
     type: "website",

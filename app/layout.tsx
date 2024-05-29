@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { DataContextProvider } from "./context/Datacontext";
 import Script from "next/script";
-import Head from "next/head";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="25J2RSU0nIRQMNowzL8CgQGJcjpfm_i-LN-VL_lUuFM" />
       </head>
+      <GoogleTagManager gtmId="GTM-PKLRVD37" />
       <body className={`${inter.className} bg-dark `}>
         <DataContextProvider>{children}</DataContextProvider>
         <Script
@@ -61,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </body>
+      <GoogleAnalytics gaId="GTM-PKLRVD37" />
     </html>
   );
 }

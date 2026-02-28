@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BlurredImage } from "../BlurredImage";
 
 const TechStack = () => {
-  const tech: Array<string> = ["html", "css", "js", "react", "next", "tailwind", "bootstrap", "git"];
+  const tech: Array<string> = ["html", "css", "js", "react", "next", "tailwind", "bootstrap", "git", "NET_Core_Logo", "sql_server"];
   return (
     <section className="mx-auto px-8 mb-40 lg:p-0 lg:max-w-screen-lg lg:mb-60" id="Techstack">
       <h3 className="text-4xl lg:text-5xl font-bold text-headingWhite text-center font-Poppins leading-7 mb-12">Tech Stack</h3>

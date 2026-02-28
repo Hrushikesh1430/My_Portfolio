@@ -1,6 +1,17 @@
 [
   {
-    "period": "Nov 2022 - Present",
+    "period": "April 2025 - Present",
+    "company": "Seatrium Engineering",
+    "experience": [
+      "Led end-to-end modernization of legacy Windows-based time management system into a scalable web application, migrating from traditional ASP.NET MVC architecture to a modern React.js frontend + .NET Core Web API backend stack.",
+      "Built and deployed an in-house Time Management System (TMS) for project tracking and man-hour approvals, replacing a third-party tool and reducing per-user licensing costs for 500 employees.",
+      "Designed and developed an interactive Risk Dashboard using React.js and Material UI, enabling real-time visualization of project risks"
+    ],
+    "techStack": "HTML5, CSS3, JavaScript, ReactJS, MUI, MobX, ASP.Net Core, SQL Sever, Git",
+    "position": "Software Developer"
+  },
+  {
+    "period": "Nov 2022 - March 2025",
     "company": "Depronto Infotech",
     "experience": [
       "Played a crucial role in development in developing web apps for for ICICI Prudential like Unified guaranteed Plans(UGP), GIFT PRO, SukhSamruddhi and final landing page for ICICI Prudential Apps ",
@@ -8,7 +19,7 @@
       "Implemented advanced debugging tools and methodologies to troubleshoot and resolve frontend issues in the production environment for ICICI web apps, resulting in a 40% reduction in customer support issues and providing a seamless user experience."
     ],
     "techStack": "HTML5, CSS3, JavaScript, ReactJS, MUI, MobX, Git",
-    "position": "Frontend Developer"
+    "position": "Software Developer"
   },
   {
     "period": "Feb 2021 - Aug 2021",

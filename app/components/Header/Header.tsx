@@ -10,7 +10,7 @@ interface navItem {
   name: string;
   link: string;
 }
-const resumeLink = "https://drive.google.com/file/d/1mFChpb9QYqMRvYDqiFTkvQ_O6eDf51X0/view?usp=sharing;";
+const resumeLink = "https://drive.google.com/file/d/1HmC3wVl0RPMfZa2Yl5X6pSTEoDzwwNYf/view?usp=sharing";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
